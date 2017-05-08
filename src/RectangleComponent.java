@@ -32,9 +32,9 @@ public class RectangleComponent extends JComponent
         {
         	for(int e=0;e<800;e+=100)
         	{
-        		if(e/100%2==1&&i%2==0)
+        		if((i/100)%2==0)
         		{
-        			g2.fillRect(i, e,100, 100);
+        			g2.fillRect(e, i,100, 100);
         			g2.setColor(Color.BLACK);
         		}
         	}
