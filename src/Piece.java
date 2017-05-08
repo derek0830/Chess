@@ -28,8 +28,8 @@ public String getId()
  }
  	public static boolean checkMoveForPawn(int row, int col,int toRow, int toCol)
  	{
-	 Boolean isLellgalMove = true;
-	 if(row==6||row==1)
+	 boolean isLellgalMove = true;
+	 if(row==6||row==1&& row!=toRow&& col!=toCol)
 		 return true;
 	 if(Math.abs(toRow-row)!=1)
 		 isLellgalMove=false;
